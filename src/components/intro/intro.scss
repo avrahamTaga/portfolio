@@ -1,0 +1,80 @@
+@import "../../global.scss";
+
+.intro {
+  background-color: white;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      display: flex;
+
+      @include mobile {
+        align-items: flex-start;
+        overflow: hidden;
+      }
+
+      .img {
+        width: 90%;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    position: relative;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+      h2 {
+        font-size: 35px;
+      }
+      h3 {
+        font-size: 30px;
+
+        span {
+          font-size: inherit;
+          color: crimson;
+        }
+
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+    }
+
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+    }
+  }
+}
