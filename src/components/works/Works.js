@@ -44,6 +44,12 @@ const Works = () => {
             <h3>Budjet</h3>
           </div>
         </a>
+        <a href="https://find-your-book.netlify.app/">
+          <div className="item">
+            <img src="assets/bookapp.png" alt="budjet" />
+            <h3>Book App</h3>
+          </div>
+        </a>
       </div>
     </div>
   );
